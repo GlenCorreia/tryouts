@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
     s.name        = "export_objects"
-    s.version     = "0.0.1"
+    s.version     = "0.0.3"
     s.summary     = "Export objects"
     s.description = "Export your objects to a pdf file"
     s.authors     = ["Glen Correia"]
