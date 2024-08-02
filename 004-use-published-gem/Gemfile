@@ -1,0 +1,3 @@
+source 'https://rubygems.org'
+
+gem 'sweet_message', '~> 0.0.1'
