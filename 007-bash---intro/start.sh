@@ -314,3 +314,29 @@ do
         echo "Inner loop: $b "
     done
 done
+
+# ****************************************
+# 12. BASH FUNCTIONS
+
+function function_name() {
+    your_commands
+}
+
+# You can also omit the function keyword at the beginning
+function_name() {
+    your_commands
+}
+
+# Example
+hello() {
+    echo "Hello World Function!"
+}
+
+hello # function call
+
+# Passing arguments to a function
+function hello() {
+    echo "Hello $1!"
+}
+
+hello GlenCorreia
