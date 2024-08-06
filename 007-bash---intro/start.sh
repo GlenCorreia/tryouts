@@ -340,3 +340,21 @@ function hello() {
 }
 
 hello GlenCorreia
+
+# ****************************************
+# 13. DEBUGGING, TESTING, SHORTCUTS
+
+# In order to debug your bash scripts, you can use -x when executing your scripts.
+# bash -x ./your_script.sh
+# Another way to test your scripts is to use this fantastic tool here -  https://www.shellcheck.net/
+
+# Following are some shortcuts to help with the terminal
+# ctrl + k # delete everything from the cursor to the end of the line.
+# ctrl + u # delete everything from the cursor to the start of the line.
+# ctrl + w # delete one word backward from the cursor.
+# ctrl + r # search your history backward. most useful.
+# ctrl + l # clear the screen, I use this instead of typing the clear command:
+# ctrl + s # stops the output to the screen.
+# ctrl + q # enable the output to the screen in case the previously stopped by ctrl + s.
+# ctrl + c # terminate the current command.
+# ctrl + z # throw the current command to background.
