@@ -248,3 +248,69 @@ do
     echo $counter
     ((counter++))
 done
+
+# Example 2
+read -p "What is your name? " name
+while [[ -z $name ]]
+do 
+    echo "Your name cannot be blank. Please enter a valid name!"
+    read -p "Enter your name again " name
+done
+echo "Hi there $name"
+
+# UNTIL LOOP (basic syntax)
+until [[ your_condition ]]
+do 
+    your_commands
+done
+
+# Example
+count=1
+until [[ $count -gt 10 ]]
+do 
+    echo $count
+    ((count++))
+done
+
+# CONTINUE AND BREAK
+# As with other languages, you can use continue and break with your bash scripts as well. Continue tells your
+# bash script to stop the current iteration of the loop and start the next iteration.
+
+# Example
+for i in 1 2 3 4 5
+do 
+    if [[ $i -eq 2 ]]
+    then 
+        echo "skipping number 2"
+        continue
+    fi 
+    echo "i is equal to $i"
+done
+
+# Break tells your bash script to end the loop stright away.
+# Example
+num=1
+while [[ $num -lt 10 ]]
+do
+    if [[ $num -eq 5 ]]
+    then 
+        break
+    fi
+    echo "We reached $num"
+    ((num++))
+done
+echo "Loop completed"
+
+# Example of break command in nested loops
+for (( a = 1; a < 10; a++ ))
+do
+    echo "outer loop: $a"
+    for (( b = 1; b < 100; b++ ))
+    do
+        if [[ $b -gt 5 ]] 
+        then
+            break 2
+        fi
+        echo "Inner loop: $b "
+    done
+done
