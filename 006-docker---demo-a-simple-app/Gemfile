@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+
+gem 'sinatra', '~> 4.0'
+
+# ruby - 3.0.0p0
+# rails - 7.0.8.4
