@@ -358,3 +358,8 @@ hello GlenCorreia
 # ctrl + q # enable the output to the screen in case the previously stopped by ctrl + s.
 # ctrl + c # terminate the current command.
 # ctrl + z # throw the current command to background.
+
+# ****************************************
+# 14. CREATING CUSTOM BASH COMMANDS
+
+alias conn="echo 'Total connections on port 80 and 443:' ; netstat -plant | grep '80\|443' | grep -v LISTEN | wc -l"
