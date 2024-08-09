@@ -363,3 +363,8 @@ hello GlenCorreia
 # 14. CREATING CUSTOM BASH COMMANDS
 
 alias conn="echo 'Total connections on port 80 and 443:' ; netstat -plant | grep '80\|443' | grep -v LISTEN | wc -l"
+
+# ****************************************
+# 15. SCRIPT TO CHECK CURRENT DISK USAGE, CPU USAGE, RAM USAGE, KERNEL VERSION
+
+# refer to status.sh script
